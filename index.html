@@ -13,10 +13,10 @@
         <i class="fas fa-chevron-left"></i>
       </div>
       <div class="slide">
-        <img src="img/redbull.jpg" alt="">
+        <img :src="imageUrl[imageIndex]" alt="">
       </div>
       <div class="next">
-        <i class="fas fa-chevron-right"></i>
+        <i class="fas fa-chevron-right" @click="nextImage()"></i>
       </div>
     </div>
 
