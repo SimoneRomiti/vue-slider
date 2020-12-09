@@ -40,3 +40,21 @@ i:hover{
   object-fit: cover;
   object-position: center;
 }
+
+.circle{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px;
+  border-radius: 50px;
+}
+.circle > i{
+  margin: 0 5px;
+}
+
+.colored{
+  color: blue;
+}

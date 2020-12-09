@@ -11,17 +11,20 @@
     <div id="slider">
 
       <div class="prev">
-        <i class="fas fa-chevron-left" @click="prevImage()"></i>
+        <i class="fas fa-chevron-left" @click="clickPrevImage()"></i>
       </div>
 
       <div class="slide">
         <img :src="imageUrl[imageIndex]" alt="">
+        <div class="circle">
+          <i v-for="item in imageUrl" class="fas fa-circle" :class="item == imageUrl[imageIndex] ? 'colored' : ''"></i>
+        </div>
       </div>
 
       <div class="next">
-        <i class="fas fa-chevron-right" @click="nextImage()"></i>
+        <i class="fas fa-chevron-right" @click="clickNextImage()"></i>
       </div>
-      
+
     </div>
 
     <script src="js/script.js" charset="utf-8"></script>
