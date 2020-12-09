@@ -6,12 +6,11 @@ var app = new Vue(
       imageIndex: 0,
       imageUrl: [
         "img/redbull.jpg",
-        "img/mercedes2.jpg",
+        "img/mercedes3.jpg",
         "img/ferrari2.jpg",
         "img/racingpoint.jpg",
         "img/mclaren.jpg",
-       ],
-       active: true,
+      ],
     },
 
     created: function(){

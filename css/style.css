@@ -58,3 +58,14 @@ i:hover{
 .colored{
   color: blue;
 }
+
+.prova-enter, .prova-leave.to{
+  opacity: 0;
+}
+.prova-enter-active,
+.prova-leave-active{
+  transition: opacity 2s;
+}
+.prova-enter-to, .prova-leave{
+  opacity: 1;
+}
