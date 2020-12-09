@@ -40,7 +40,7 @@ var app = new Vue(
           this.imageIndex++;
         }
       },
-      
+
       prevImage: function(){
         if(this.imageIndex - 1 == -1){
           this.imageIndex = this.imageUrl.length - 1;
@@ -48,6 +48,11 @@ var app = new Vue(
           this.imageIndex--;
         }
       },
+
+      selectedImage: function(i){
+        clearInterval(auto);
+        this.imageIndex = i;
+      }
     }
   }
 );

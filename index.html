@@ -17,7 +17,7 @@
       <div class="slide">
         <img :src="imageUrl[imageIndex]" alt="">
         <div class="circle">
-          <i v-for="item in imageUrl" class="fas fa-circle" :class="item == imageUrl[imageIndex] ? 'colored' : ''"></i>
+          <i v-for="(item, index) in imageUrl" class="fas fa-circle" :class="item == imageUrl[imageIndex] ? 'colored' : ''" @click="selectedImage(index)"></i>
         </div>
       </div>
 
