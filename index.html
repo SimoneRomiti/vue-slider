@@ -9,15 +9,19 @@
   </head>
   <body>
     <div id="slider">
+
       <div class="prev">
-        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-left" @click="prevImage()"></i>
       </div>
+
       <div class="slide">
         <img :src="imageUrl[imageIndex]" alt="">
       </div>
+
       <div class="next">
         <i class="fas fa-chevron-right" @click="nextImage()"></i>
       </div>
+      
     </div>
 
     <script src="js/script.js" charset="utf-8"></script>
